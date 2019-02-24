@@ -1,0 +1,28 @@
+<script type="application/json" id="reveal-hugo-site-params">{{ jsonify .Site.Params.webslides | safeJS }}</script>
+<script type="application/json" id="reveal-hugo-page-params">{{ jsonify .Page.Params.webslides | safeJS }}</script>
+
+<script src="//raw.githubusercontent.com/webslides/WebSlides/master/static/js/webslides.min.js"></script>
+
+<script type="text/javascript">
+  // Hugo lowercases all params and Reveal.js needs camelcase
+  // So params in Hugo must be stored in snakecase and we camelize them here
+  // https://github.com/dzello/reveal-hugo
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  var webslidesHugoSiteParams = JSON.parse(document.getElementById('webslides-hugo-site-params').innerHTML);
+  var webslidesHugoPageParams = JSON.parse(document.getElementById('webslides-hugo-page-params').innerHTML);
+  var options = Object.assign({},
+    camelize(webslidesHugoSiteParams),
+    camelize(webslidesHugoPageParams));
+  window.ws = new WebSlides(options);
+</script>

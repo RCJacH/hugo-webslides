@@ -1,0 +1,4 @@
+{{ define "main" }}
+  <div>index</div>
+  {{ partial "slides" (union (slice .Page) .Pages) }}
+{{ end }}

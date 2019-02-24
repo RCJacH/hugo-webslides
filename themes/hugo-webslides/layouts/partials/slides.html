@@ -1,0 +1,9 @@
+<!-- Use the array of pages passed as a param -->
+{{ range . -}}
+<!-- Don't process empty content files -->
+  {{- if ne (len .Content) 0 -}}
+  Content Start
+    {{ .Content }}
+  Content End
+  {{- end -}}
+{{- end }}

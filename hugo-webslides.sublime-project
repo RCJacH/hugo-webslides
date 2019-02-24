@@ -1,0 +1,27 @@
+{
+  "build_systems":
+  [
+    {
+      "name": "Start Hugo Server",
+      "target": "console_exec",
+      "cmd": ["start", "microsoft-edge:http://localhost:1313", "&;", "hugo", "server", "--disableFastRender", "--buildDrafts", "--watch", "--verbose", ],
+      "working_dir": "$project_path",
+      "shell": false,
+      "variants":
+      [
+        {
+          "name": "Build",
+          "cmd": "hugo",
+          "shell": false
+        }
+      ],
+    }
+  ],
+  "folders":
+  [
+    {
+      "path": "."
+    }
+  ],
+
+}

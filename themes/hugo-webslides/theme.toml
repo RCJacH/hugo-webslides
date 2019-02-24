@@ -1,0 +1,17 @@
+name = "hugo-webslides"
+license = "MIT"
+licenselink = "https://github.com/RCjacH/hugo-webslides/blob/master/LICENSE.md"
+description = ""
+homepage = "http://example.com/"
+tags = ["presentation", "webslidesjs"]
+features = ["presentation"]
+
+[author]
+  name = "RCJacH"
+  homepage = "https://RCJacH.github.io"
+
+# If porting an existing theme
+[original]
+  name = "webslides.js"
+  homepage = "https://webslides.tv/"
+  repo = "https://github.com/webslides/WebSlides"
