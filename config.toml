@@ -2,9 +2,23 @@ baseURL = "https://example.com/"
 languageCode = "en-us"
 title = "A Hugo theme for creating Webslides.js presentations"
 disableKinds = ["sitemap", "RSS"]
-theme = "hugo-cssslides"
-
-[author]
-name = "RCJacH"
+theme = "hugo-webslides"
 
 [params]
+author = "RCJacH"
+
+[params.webslides]
+banner = false
+slideshow = true
+vertical = false
+autoslide = false
+changeOnClick = false
+loop = true
+minWheelDelta = 40
+navigateOnScroll = true
+scrollWait = 450
+slideOffset = 50
+showIndex = true
+
+[blackfriday]
+extensionsmask = ["autoHeaderIds"]

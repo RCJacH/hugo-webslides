@@ -1,52 +1,117 @@
 +++
 title = "Music Production 101"
-bg = "bg-red"
 +++
-<!-- .wrap #id .aligncenter bgimage=https://source.unsplash.com/R1J6Z1cnJZc/1600x800 -->
+<!--: .wrap .aligncenter -->
 
-# Good Karma ::: text-landing
+# <!--: .text-landing --> Good Karma
 
-[**WebSlides**](http://webslides.tv) &mdash; HTML presentations made easy. <br>
+<!--: .text-intro -->[**WebSlides**](http://webslides.tv) &mdash; HTML presentations made easy. <br>
 Hypertext and beauty as narrative elements.
 
-[Twitter](https://twitter.com/webslides) 
+[Twitter](https://twitter.com/webslides)
 [Dribble](https://dribbble.com/tags/webslides)
 [Github](https://github.com/webslides/webslides)
 
 ---
+<!--: .wrap .fadeInUp bg=bg-black bg=aligncenter bgimage=frame|https://source.unsplash.com/OkAAx4mI2Hc/ -->
 
-<!-- .class #id -->
-
-<div class="wrap aligncenter">
-    <h1 class="text-landing">Good Karma</h1>
-    <p class="text-intro">
-    <strong><a href="http://webslides.tv/">WebSlides</a></strong> &mdash; HTML presentations made easy. <br>
-    Hypertext and beauty as narrative elements.
-    </p>
-    <nav>
-        <ul>
-            <li><a href="https://twitter.com/webslides">Twitter</a></li>
-            <li><a href="https://dribbble.com/tags/webslides">Dribbble</a></li>
-            <li><a href="https://github.com/webslides/webslides">Github</a></li>
-        </ul>
-    </nav>
-</div>
+# Everyone {{< svg fa-heart-o >}} Stories
 
 ---
-<!-- .wrap -->
+<!--: .wrap ..content-center -->
 
-# Grid
+## **Why WebSlides?**
+
+<blockquote>
+  <p>"I feel guilty as a web designer when I have to use PowerPoint and Keynote. So I made <a href="https://twitter.com/search?q=%23webslides&amp;src=typd">#WebSlides</a>."</p>
+  <p><cite> <img class="avatar-40" src="https://raw.githubusercontent.com/webslides/WebSlides/master/static/images/avatar.jpg" alt="Avatar"> <a href="http://twitter.com/jlantunez/">@jlantunez</a>.</cite></p>
+</blockquote>
+
+---
+<!--: .wrap ..grid ..vertical-align -->
 
 |||
 
-## Column 1
-Text
+### **WebSlides is really easy**
+<!--: .text-intro -->Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide.
+
+Code is clean, scalable, and well documented. It uses **intuitive markup** with popular naming conventions. There's no need to overuse classes or nesting. **Based on [SimpleSlides](https://github.com/jennschiffer/SimpleSlides), by [Jenn Schiffer](http://jennmoney.biz)** :)
 
 |||
 
-## Column 2
-Text
+<pre>&lt;article id="webslides"&gt;
+  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
+  &lt;section&gt;
+    &lt;h1&gt;Design for trust&lt;/h1&gt;
+  &lt;/section&gt;
+  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
+  &lt;section class="bg-primary"&gt;
+    &lt;div class="wrap"&gt;
+      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+</pre>
 
 ---
+<!--: .wrap -->
 
-no slide properties
+{{% div class="content-left" %}}
+## WebSlides was made to inspire people.
+{{% /div %}}
+
+{{% div class="content-left" %}}
+There are excellent presentation tools out there. WebSlides is **an open source solution** for telling stories. Hypertext and beauty as narrative elements.
+{{% /div %}}
+
+<!--: .flexblock features -->
+- {{< feature "<span>&rarr;</span> Keyboard navigation" >}}with arrow keys.{{< /feature >}}
+- <div><h2>{{< svg fa-link >}}Go to a specific slide</h2>URL: #slide=number</div>
+- <div><h2>{{< svg fa-clock-o >}}Slide counter</h2>Current/Total number.</div>
+
+---
+<!--: .wrap -->
+
+<!--: .flexblock features  -->
+- {{< feature "<span>100<sup>%</sup></span> customizable" >}}Well documented.{{< /feature >}}
+- {{< feature "<span>40<sup>+</sup></span> Beautiful Components" >}}Covers, cards, quotes...{{< /feature >}}
+- <div><h2>{{< svg fa-list >}}Flexible blocks</h2>with auto-fill and equal height.</div>
+- <div><h2>{{< svg fa-text-height >}}Vertical rhythm</h2>Use multiples of 8.</div>
+- <div><h2>{{< svg fa-language >}}Fade transition</h2>to all slides.</div>
+- {{< feature "<span>500<sup>+</sup></span>SVG Icons" >}}Font Awesome Kit.{{< /feature >}}
+
+---
+<!--： .wrap ..grid ..vertical-align -->
+
+|||
+
+### Support
+
+Making a beautiful HTML presentation has never been so rewarding.
+
+<!--: .description -->
+- **Demos:** [Landings](https://webslides.tv/demos/landings) &middot; [Portfolios](https://webslides.tv/demos/portfolios.html)
+- **Docs:** [Components](https://webslides.tv/demos/components.html) &middot; [Classes](https://webslides.tv/demos/classes.html)
+- **Tags:** [Dribble](https://dribbble.com/tags/webslides) &middot; [Instagram](https://instagram.com/webslides)
+
+|||
+
+[<img class="aligncenter" src="https://raw.githubusercontent.com/webslides/WebSlides/master/static/images/setup.png" alt="WebSlides Files">](https://github.com/webslides/webslides")
+
+|||
+
+### Extensible
+
+The best way to inspire with your content is to connect on a personal level:
+
+<!--: .description  -->
+- **Animations:** [Animate.css](https://github.com/daneden/animate.css/).
+- **Images:** [Unsplash](http://unsplash.com).
+- **Videos:** [Pixabay](https://pixabay.com/en/videos).
+
+---
+<!--: bg=bg-apple bg=aligncenter .wrap bgimage=https://webslides.tv/static/images/tim-cook.png bgpos=right-bottom -->
+
+## One more thing...
+
+<!--: .fadeInUp -->[Make your keynote &mdash; <code>.bg-apple</code>](https://webslides.tv/demos/keynote.html)

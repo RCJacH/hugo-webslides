@@ -1,3 +1,8 @@
 <div class='{{ .Get "class" }}'>
-{{ .Inner | markdownify }}
+{{- $content := (.Inner | markdownify) | chomp -}}
+{{- if eq (first 1 $content | htmlUnescape) "<" }}
+  {{ $content }}
+{{ else }}
+  <p>{{ $content }}</p>
+{{ end -}}
 </div>

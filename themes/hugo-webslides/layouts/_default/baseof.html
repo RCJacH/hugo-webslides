@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
     <title>{{ or .Page.Title .Site.Title }}</title>
-    {{ with $.Param "description" }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.Description }}<meta name="description" content="{{ . }}">{{ end }}
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
     <link rel="stylesheet" type='text/css' media='all' href="/css/webslides.css">
     <link rel="stylesheet" type="text/css" media="all" href="/css/svg-icons.css">
-    {{- partial "head.html" . }}
+    {{ range .Site.Params.customcss }}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+    {{ end }}
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="/img/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="/img/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="/img/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="/img/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="/img/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="/img/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="/img/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    {{ partial "head.html" . }}
   </head>
   <body>
-    {{ partial "body.html" . -}}
-    {{- partial "banner.html" . -}}
+    {{ partial "banner.html" . }}
     <main role="main">
-      <article id="webslides">
+      <article{{- if .Site.Params.Webslides.slideshow }} id="webslides"{{- if .Site.Params.Webslides.vertical }} class="vertical"{{- end -}}{{- end -}}>
         {{ block "main" . -}}{{- end }}
       </article>
     </main>
 
-    {{- partial "footer.html" . }}
+    {{ partial "footer.html" . }}
+    {{ partial "webslides.html" . }}
   </body>
 </html>
