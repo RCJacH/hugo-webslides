@@ -1,12 +1,12 @@
 <script src="/js/webslides.min.js"></script>
 <script>window.ws = new WebSlides({
-  autoslide:{{- .Site.Params.Webslides.autoslide -}},
-  changeOnClick:{{- .Site.Params.Webslides.changeonclick -}},
-  loop:{{- .Site.Params.Webslides.loop -}},
-  minWheelDelta:{{- .Site.Params.Webslides.minwheeldelta -}},
-  navigateOnScroll:{{- .Site.Params.Webslides.navigateonscroll -}},
-  scrollWait:{{- .Site.Params.Webslides.scrollwait -}},
-  slideOffset:{{- .Site.Params.Webslides.slideoffset -}},
-  showIndex:{{- .Site.Params.Webslides.showindex -}},
+  {{- with .Site.Params.Webslides.autoslide -}}autoslide:{{- . -}},{{- end -}}
+  {{- with .Site.Params.Webslides.changeonclick -}}changeOnClick:{{- . -}},{{- end -}}
+  {{- with .Site.Params.Webslides.disableLoop -}}loop: false,{{ end }}
+  {{- with .Site.Params.Webslides.minwheeldelta -}}minWheelDelta:{{- . -}},{{- end -}}
+  {{- with .Site.Params.Webslides.disablenavigateonscroll -}}navigateOnScroll: false,{{- end -}}
+  {{- with .Site.Params.Webslides.scrollwait -}}scrollWait:{{- . -}},{{- end -}}
+  {{- with .Site.Params.Webslides.slideoffset -}}slideOffset:{{- . -}},{{- end -}}
+  {{- with .Site.Params.Webslides.hideindex -}}showIndex: false,{{- end -}}
 });</script>
 <script defer src="/js/svg-icons.js"></script>

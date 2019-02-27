@@ -13,12 +13,12 @@ slideshow = true
 vertical = false
 autoslide = false
 changeOnClick = false
-loop = true
+disableLoop = false
 minWheelDelta = 40
-navigateOnScroll = true
+disableNavigateOnScroll = false
 scrollWait = 450
 slideOffset = 50
-showIndex = true
+hideIndex = false
 
 [blackfriday]
 extensionsmask = ["autoHeaderIds"]
