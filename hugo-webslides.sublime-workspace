@@ -268,12 +268,20 @@
 	"buffers":
 	[
 		{
-			"file": "config.toml",
+			"file": "content/_index.md",
 			"settings":
 			{
-				"buffer_size": 214,
+				"buffer_size": 4373,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/hugo-webslides/layouts/_default/baseof.html",
+			"settings":
+			{
+				"buffer_size": 2186,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -470,21 +478,41 @@
 	"expanded_folders":
 	[
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/archetypes",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/assets",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/content",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/content/home",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/static",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/static/css",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-cssslides",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-cssslides/layouts",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-cssslides/layouts/_default",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-cssslides/layouts/partials",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-cssslides/layouts/shortcodes"
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/archetypes",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/shortcodes",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/static",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/static/css"
 	],
 	"file_history":
 	[
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/config.toml",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/theme.toml",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/single.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/content/home/second.md",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/content/home/third.md",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/page.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/archetypes/default.md",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/shortcodes/div.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/shortcodes/feature.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/shortcodes/cite.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/webslides/static/css/webslides.css",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/slides.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/webslides.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/banner.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/shortcodes/svg.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/baseof.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/list.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/footer.html",
+		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/index.html",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-cssslides/layouts/_default/baseof.html",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/content/_index.md",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-cssslides/layouts/partials/slides.html",
@@ -498,18 +526,10 @@
 		"/P/DAW/REAPER/Effects/RCJacH JSFX/JSFX/Synth/ReaModular/MSEG CV.jsfx",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-cssslides/layouts/partials/footer.html",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/body.html",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/single.html",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/index.html",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/list.html",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/slides.html",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/shortcodes/class.html",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/config.toml",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/shortcodes/div.html",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/baseof.html",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/head.html",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/single.webslides.html",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/_default/baseof.webslides.html",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/banner.html",
 		"/C/Tools/Coding/Sublime Text/Data/Packages/SublimeGit/SublimeGit.sublime-settings",
 		"/C/Tools/Coding/Sublime Text/Data/Packages/User/SublimeGit.sublime-settings",
 		"/C/Tools/Coding/Sublime Text/Data/Packages/SideBarEnhancements/Side Bar.sublime-settings",
@@ -517,9 +537,7 @@
 		"/C/Users/RCJac/OneDrive/Documents/RCJacH.github.io/config.toml",
 		"/C/Users/RCJac/Documents/GitHub/RCJacH.github.io/themes/hugo-icarus-theme/layouts/partials/head.html",
 		"/C/Users/RCJac/Documents/GitHub/RCJacH.github.io/themes/hugo-icarus-theme/layouts/partials/article_footer.html",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/layouts/partials/footer.html",
 		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/archetypes/default.md",
-		"/C/Users/RCJac/OneDrive/Documents/Design/hugo/hugo-webslides/themes/hugo-webslides/theme.toml",
 		"/C/Users/RCJac/OneDrive/Documents/Blog/Theory/music_production/content/home/rhythm.md",
 		"/C/Users/RCJac/OneDrive/Documents/Blog/Theory/music_production.sublime-project",
 		"/C/Users/RCJac/OneDrive/Documents/Blog/Theory/music_production/themes/hugo-webslides/theme.toml",
@@ -603,16 +621,7 @@
 		"/C/Users/RCJac/Documents/GitHub/RCJacH.github.io/layouts/shortcodes/vextab.html",
 		"/C/Users/RCJac/Documents/Blog/Theory/Rhythm/themes/reveal-hugo/layouts/shortcodes/slide.html",
 		"/C/Users/RCJac/Documents/Blog/Theory/Rhythm/themes/reveal-hugo/layouts/partials/reveal-hugo/slides.html",
-		"/C/Tools/Coding/Sublime Text/Data/Packages/Git/Git.sublime-settings",
-		"/C/Tools/Coding/Sublime Text/Data/Packages/User/Git.sublime-settings",
-		"/C/Tools/Coding/Sublime Text/Data/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-		"/C/Users/RCJac/Documents/Blog/Theory/Rhythm/themes/remark/layouts/partials/footer.html",
-		"/C/Users/RCJac/Documents/Blog/Theory/Rhythm/themes/remark/layouts/partials/slides.html",
-		"/C/Users/RCJac/Documents/Blog/Theory/Rhythm/content/slides/010.md",
-		"/C/Users/RCJac/Documents/Blog/Theory/Rhythm/content/010.md",
-		"/C/Users/RCJac/Documents/Blog/Theory/rhythm.sublime-project",
-		"/C/Users/RCJac/Documents/Blog/Theory/Rhythm/Rhythm/content/010.md",
-		"/C/Users/RCJac/Documents/Coding-Projects/outlook-master/main.py"
+		"/C/Tools/Coding/Sublime Text/Data/Packages/Git/Git.sublime-settings"
 	],
 	"find":
 	{
@@ -630,6 +639,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"slideClass",
+			"with",
+			":",
+			"Site.Webslides",
+			"Webslides",
+			"../static/images",
 			"$scratch",
 			".Scratch",
 			"</?a.+",
@@ -664,39 +679,87 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config.toml",
+					"file": "content/_index.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 214,
+						"buffer_size": 4373,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								214,
-								214
+								67,
+								39
 							]
 						],
 						"settings":
 						{
+							"SL.41.region_keys":
+							[
+							],
 							"WordCount":
 							{
-								"changes": 14,
-								"count": 20,
+								"changes": 3704,
+								"count": 238,
 								"modified": false,
 								"selection": false,
 								"status": -1,
 								"syntax": "plain text"
 							},
-							"markdonw_live_preview_last_run": 1550686025.62,
-							"syntax": "Packages/TOML/TOML.sublime-syntax"
+							"markdonw_live_preview_last_run": 1551027199.89,
+							"syntax": "Packages/MarkdownEditing/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "themes/hugo-webslides/layouts/_default/baseof.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.239.region_keys":
+							[
+							],
+							"WordCount":
+							{
+								"changes": 4,
+								"count": 14,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"markdonw_live_preview_last_run": 1551028681.12,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -759,7 +822,7 @@
 	"project": "hugo-webslides.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 98.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -797,7 +860,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 291.0,
+	"side_bar_width": 222.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

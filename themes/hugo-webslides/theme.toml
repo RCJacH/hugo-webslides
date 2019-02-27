@@ -10,7 +10,6 @@ features = ["presentation"]
   name = "RCJacH"
   homepage = "https://RCJacH.github.io"
 
-# If porting an existing theme
 [original]
   name = "webslides.js"
   homepage = "https://webslides.tv/"
