@@ -28,9 +28,9 @@ Hypertext and beauty as narrative elements.
 </blockquote>
 
 ---
-<!--: .wrap ..grid ..vertical-align -->
+<!--: .wrap -->
 
-|||
+||||
 
 ### **WebSlides is really easy**
 <!--: .text-intro -->Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide.
@@ -81,9 +81,9 @@ There are excellent presentation tools out there. WebSlides is **an open source 
 - {{< flexblock "<span>500<sup>+</sup></span>SVG Icons" >}}Font Awesome Kit.{{< /flexblock >}}
 
 ---
-<!--： .wrap ..grid ..vertical-align -->
+<!--： .wrap -->
 
-|||
+||||
 
 ### Support
 
