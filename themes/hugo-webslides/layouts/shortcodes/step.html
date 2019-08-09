@@ -1,0 +1,7 @@
+{{- $number := strings.TrimLeft "0" (index (findRE "^[0-9]+" (.Get 0)) 0) -}}
+{{- with $number -}}
+  {{- if ne $number "1" -}}
+<div class="process step-{{ $number }}"></div>
+  {{- end -}}
+{{- end -}}
+<h2>{{ .Get 0 | safeHTML }}</h2>{{ .Inner | safeHTML }}
