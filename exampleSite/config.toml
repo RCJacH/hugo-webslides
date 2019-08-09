@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "A Hugo theme for creating Webslides.js presentations"
 disableKinds = ["sitemap", "RSS"]
 theme = "hugo-webslides"
-themeDir = "../.."
+themesDir = "../.."
 tags = ["slide", "presentation", "responsive", "landing page"]
 features = ["webslides.js", "pre-made template", "shortcodes"]
 
