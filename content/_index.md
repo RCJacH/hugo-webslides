@@ -65,7 +65,7 @@ There are excellent presentation tools out there. WebSlides is **an open source 
 {{% /div %}}
 
 <!--: .flexblock features -->
-- {{< feature "<span>&rarr;</span> Keyboard navigation" >}}with arrow keys.{{< /feature >}}
+- {{< flexblock "<span>&rarr;</span> Keyboard navigation" >}}with arrow keys.{{< /flexblock >}}
 - <div><h2>{{< svg fa-link >}}Go to a specific slide</h2>URL: #slide=number</div>
 - <div><h2>{{< svg fa-clock-o >}}Slide counter</h2>Current/Total number.</div>
 
@@ -73,12 +73,12 @@ There are excellent presentation tools out there. WebSlides is **an open source 
 <!--: .wrap -->
 
 <!--: .flexblock features  -->
-- {{< feature "<span>100<sup>%</sup></span> customizable" >}}Well documented.{{< /feature >}}
-- {{< feature "<span>40<sup>+</sup></span> Beautiful Components" >}}Covers, cards, quotes...{{< /feature >}}
+- {{< flexblock "<span>100<sup>%</sup></span> customizable" >}}Well documented.{{< /flexblock >}}
+- {{< flexblock "<span>40<sup>+</sup></span> Beautiful Components" >}}Covers, cards, quotes...{{< /flexblock >}}
 - <div><h2>{{< svg fa-list >}}Flexible blocks</h2>with auto-fill and equal height.</div>
 - <div><h2>{{< svg fa-text-height >}}Vertical rhythm</h2>Use multiples of 8.</div>
 - <div><h2>{{< svg fa-language >}}Fade transition</h2>to all slides.</div>
-- {{< feature "<span>500<sup>+</sup></span>SVG Icons" >}}Font Awesome Kit.{{< /feature >}}
+- {{< flexblock "<span>500<sup>+</sup></span>SVG Icons" >}}Font Awesome Kit.{{< /flexblock >}}
 
 ---
 <!--： .wrap ..grid ..vertical-align -->
