@@ -9,6 +9,7 @@
     {{- $content := replace .Content "<div class=\"footnotes\">\n\n<hr />" "<div class=\"footnotes\">" -}}
     <!-- Split the processed content by <hr /> tag -->
     {{- range $elem_val := split $content "<hr />" -}}
+      <!-- Initialize Scratch Content -->
       {{- $.Scratch.Delete "contentClass" -}}
       {{- $.Scratch.Delete "secondaryClass" -}}
       {{- $.Scratch.Delete "slideID" -}}
@@ -19,7 +20,7 @@
       {{- $.Scratch.Delete "slideClass" -}}
       
       <!-- Get slide properties from first line with HTML comment -->
-      {{- $first := index (findRE "<!--: (.+) -->" $elem_val 1) 0 -}}
+      {{- $first := index (findRE "<!--[ ]?: (.+) -->" $elem_val 1) 0 -}}
       {{- with $first -}}
         {{- $.Scratch.Set "contentClass" (replace (delimit (findRE " [.][^. ]+" $first) " ") " ." "") -}}
         {{- $.Scratch.Set "secondaryClass" (replace (delimit (findRE " [.][.][^. ]+" $first) " ") " .." "") -}}
@@ -37,9 +38,12 @@
       {{- $elem_val := replace $elem_val $first "" -}}
 
       <!-- Block class -->
-      {{- $elem_val := replaceRE "<([^>]+)><!--: [.](.+) -->" "<$1 class=\"$2\">" $elem_val -}}
+      {{- $elem_val := replaceRE "<([^>]+)><!--[ ]?: [.](.+) -->" "<$1 class=\"$2\">" $elem_val -}}
       <!-- List class -->
-      {{- $elem_val := replaceRE "<!--: [.](.+) -->[\n]*<([uo]l)>" "<$2 class=\"$1\">" $elem_val }}
+      {{- $elem_val := replaceRE "<!--[ ]?: [.](.+) -->[\n]*<([uo]l)>" "<$2 class=\"$1\">" $elem_val }}
+
+      <!-- hr with two dashes -->
+      {{- $elem_val := replaceRE "[\n]*<p>&ndash;</p>[\n]*" "<hr />" $elem_val }}
 
       <section id="{{- if $.Scratch.Get "slideID" }}{{ $.Scratch.Get "slideID" }}{{ else -}}slide{{- $.Scratch.Get "slideIDGlobal" -}}{{- end -}}"{{- with (or ($.Scratch.Get "slideClass") ($.Scratch.Get "slideClassGlobal")) }} class="{{- . -}}"{{- end -}}>
         {{- with $.Scratch.Get "bgImage" }}
