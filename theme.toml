@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/RCjacH/hugo-webslides/blob/master/LICENSE.md"
 description = ""
 homepage = "http://example.com/"
-tags = ["presentation", "webslidesjs"]
-features = ["presentation"]
+tags = ["slide", "presentation", "responsive", "landing page"]
+features = ["webslides.js", "pre-made template", "shortcodes"]
 
 [author]
   name = "RCJacH"

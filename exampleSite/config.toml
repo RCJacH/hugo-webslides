@@ -5,7 +5,7 @@ disableKinds = ["sitemap", "RSS"]
 theme = "hugo-webslides"
 themeDir = "../.."
 tags = ["slide", "presentation", "responsive", "landing page"]
-features = ["slide"]
+features = ["webslides.js", "pre-made template", "shortcodes"]
 
 [params]
   author = "RCJacH"
