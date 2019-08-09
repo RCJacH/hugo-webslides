@@ -1,0 +1,29 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "A Hugo theme for creating Webslides.js presentations"
+disableKinds = ["sitemap", "RSS"]
+theme = "hugo-webslides"
+themeDir = "../.."
+tags = ["slide", "presentation", "responsive", "landing page"]
+features = ["slide"]
+
+[params]
+  author = "RCJacH"
+  homepage = "RCJacH.github.io"
+
+
+[params.webslides]
+  banner = false
+  slideshow = true
+  vertical = false
+  autoslide = false
+  changeOnClick = false
+  disableLoop = false
+  minWheelDelta = 40
+  disableNavigateOnScroll = false
+  scrollWait = 450
+  slideOffset = 50
+  hideIndex = false
+
+[blackfriday]
+extensionsmask = ["autoHeaderIds"]
