@@ -24,7 +24,7 @@
       <!-- Get slide properties from first line with HTML comment -->
       {{- $first := index (findRE "<!--[ ]?: (.+) -->" $elem_val 1) 0 -}}
       {{- with $first -}}
-        {{- $.Scratch.Set "sectionClass" (replace (index (findRE " ([a-zA-Z1-9]|-|_)+" $first) 0) " " "") -}}
+        {{- $.Scratch.Set "sectionClass" (replace (index (findRE " ([a-zA-Z1-9]|-{,1}|_{,1})+[^=] " $first) 0) " " "") -}}
         {{- $.Scratch.Set "contentClass" (replace (delimit (findRE " [.][^. ]+" $first) " ") " ." "") -}}
         {{- $.Scratch.Set "secondaryClass" (replace (delimit (findRE " [.][.][^. ]+" $first) " ") " .." "") -}}
         {{- $.Scratch.Set "slideID" (replace (delimit (findRE " #[^ ]+" $first) "-") " #" "") -}}
