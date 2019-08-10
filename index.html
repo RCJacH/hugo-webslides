@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns#">
+  <head>
+	<meta name="generator" content="Hugo 0.54.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <title>Hugo-Webslides</title>
+    <meta name="author" content="RCJacH">
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    
+    <link rel="stylesheet" type='text/css' media='all' href="css/webslides.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/svg-icons.css">
+    
+
+    
+    <link rel="shortcut icon" sizes="16x16" href="/img/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="/img/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="/img/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="/img/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="/img/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="/img/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="/img/favicons/favicon-192.png">
+
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    
+  </head>
+  <body>
+    
+    <main role="main">
+      <article id="webslides">
+        
+
+
+  
+
+      
+
+      <section id="slide1">
+        <div class="wrap size-70">
+          <div class="aligncenter">
+
+
+
+<h2 id="toc_0"><strong>Hugo-Webslides</strong></h2>
+
+<p class="text-intro">Use markdown to write contents and render with <strong>WebSlides</strong> to html.</p>
+
+<p><a href="https://github.com/RCJacH/hugo-webslides"><svg class="fa-github">
+  <use xlink:href="#fa-github"></use>
+</svg>
+Github</a></p>
+
+ 
+          </div></div>
+      </section>
+      
+
+      <section id="slide2">
+        <div class="wrap">
+
+
+
+<h2 id="toc_1"><strong>WebSlides Demos</strong></h2>
+
+<p>Here&rsquo;s what you can do with <a href="https://webslides.tv">WebSlides</a>.</p>
+
+<ul class="flexblock gallery">
+<li><a href="#slide=10" title="Why WebSlides">
+  <figure>
+    <img alt="Thumbnail Why WebSlides" src="https://webslides.tv/static/images/demos-why.png">
+    <figcaption>
+      <h2>Why WebSlides</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+<li><a href="https://webslides.tv/demos/landings" title="Landings">
+  <figure>
+    <img alt="Thumbnail Landings" src="https://webslides.tv/static/images/demos-landings.png">
+    <figcaption>
+      <h2>Landings</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+<li><a href="https://webslides.tv/demos/portfolios" title="Portfolios">
+  <figure>
+    <img alt="Thumbnail Portfolios" src="https://webslides.tv/static/images/demos-portfolios.png">
+    <figcaption>
+      <h2>Portfolios</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+<li><a href="https://webslides.tv/demos/apple" title="Keynote">
+  <figure>
+    <img alt="Thumbnail Keynote" src="https://webslides.tv/static/images/demos-apple.png">
+    <figcaption>
+      <h2>Keynote</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+</ul>
+
+ </div>
+      </section>
+      
+
+      <section id="slide3">
+        <div class="wrap">
+
+
+
+<h2 id="toc_2"><strong>More Examples</strong></h2>
+
+<p><small>Note. None of these slides are currently not ported to Hugo-Webslides&hellip;YET.</small></p>
+
+<ul class="flexblock gallery">
+<li><a href="https://webslides.tv/demos/netflix-culture" title="Netflix&#39;s Culture">
+  <figure>
+    <img alt="Thumbnail Netflix&#39;s Culture" src="https://webslides.tv/static/images/demos-netflix.png">
+    <figcaption>
+      <h2>Netflix</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+<li><a href="https://webslides.tv/demos/longforms" title="Longform Articles">
+  <figure>
+    <img alt="Thumbnail Longform Articles" src="https://webslides.tv/static/images/demos-longforms.png">
+    <figcaption>
+      <h2>Longforms</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+<li><a href="https://webslides.tv/demos/interviews" title="Interviews">
+  <figure>
+    <img alt="Thumbnail Interviews" src="https://webslides.tv/static/images/demos-interviews.png">
+    <figcaption>
+      <h2>Interviews</h2>
+    </figcaption>
+  </figure>
+</a>
+</li>
+</ul>
+
+ </div>
+      </section>
+      
+
+      <section id="slide4">
+        <div class="wrap size-40">
+
+
+
+<h3 id="toc_3"><strong>Configuration</strong></h3>
+
+<p class="text-intro">You can modify WebSlides settings directly from your project config.toml.</p>
+
+<pre><code class="language-toml">[params.webslides]
+  banner = false
+  slideshow = true
+  vertical = false
+  autoslide = false
+  changeOnClick = false
+  disableLoop = false
+  minWheelDelta = 40
+  disableNavigateOnScroll = false
+  scrollWait = 450
+  slideOffset = 50
+  hideIndex = false
+</code></pre>
+
+ </div>
+      </section>
+      
+
+      <section id="slide5">
+        <div class="wrap">
+
+
+
+
+          <div class="grid vertical-align">
+            <div class="column">
+
+<h3 id="toc_4"><strong>All from one markdown file</strong></h3>
+
+<p>Use three dashes &ldquo;<code>-</code>&rdquo; to create a separate slide page.</p>
+
+</div>
+            <div class="column">
+
+<pre><code class="language-markdown">
+Slide1
+
+---
+
+Slide2
+
+</code></pre>
+
+</div>
+          </div> </div>
+      </section>
+      
+
+      <section id="slide6">
+        <div class="wrap">
+
+
+
+
+          <div class="grid">
+            <div class="column">
+
+<pre><code>content
+├── home
+│   ├── home1.md (weight: 1)
+│   └── home2.md (weight: 2)
+└── _index.md (initial page)
+</code></pre>
+
+</div>
+            <div class="column">
+
+<h3 id="toc_5">Or not.</h3>
+
+<p>You can combine and arrange files with the weight parameter in front matter, and categorize .md files into different folders.</p>
+
+</div>
+          </div> </div>
+      </section>
+      
+
+      <section id="slide7">
+        <div class="aligncenter">
+
+
+
+<h2 id="toc_6">Simple Class Assignment</h2>
+
+<p>Assign class to a block by using the following notation without quote.</p>
+
+<p><code><span>&lt;!-</span>- : .class -<span>-&gt;</span>Content</code></p>
+
+ </div>
+      </section>
+      
+
+      <section id="slide8">
+        <div class="wrap">
+
+
+
+<h3 id="toc_7">You can assign class to many elements</h3>
+
+<ul class="flexblock">
+<li><div>
+  <h6>
+    Slides
+  </h6>
+  <p><span>&lt;!-</span>- : sectionClass .divClass ..subClass -<span>-&gt;</span><br>
+Content</p>
+
+<pre><code class="language-html">&lt;section class=&quot;sectionClass&quot;&gt;
+  &lt;div class=&quot;divClass&quot;&gt;
+    &lt;div class=&quot;subClass&quot;&gt;
+    Content
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+
+</div>
+</li>
+
+<li><div>
+  <h6>
+    Headers and Paragraphs
+  </h6>
+  <p><span># &lt;!-</span>- : .hClass -<span>-&gt;</span>Header<br>
+<span>&lt;!-</span>- : .pClass -<span>-&gt;</span>Paragraph</p>
+
+<pre><code class="language-html">&lt;h1 class=&quot;hClass&quot;&gt;Header&lt;/h1&gt;
+&lt;p class=&quot;pClass&quot;&gt;Paragraph&lt;/p&gt;
+</code></pre>
+
+</div>
+</li>
+
+<li><div>
+  <h6>
+    Lists
+  </h6>
+  <p><span>&lt;!-</span>- : .listClass -<span>-&gt;</span><br>
+<span>-</span> list1<br>
+<span>-</span> list2</p>
+
+<pre><code>&lt;ul class=&quot;listClass&quot;&gt;
+  &lt;li&gt;list1&lt;/li&gt;
+  &lt;li&gt;list2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+</div>
+</li>
+</ul>
+ </div>
+      </section>
+  
+
+      
+
+      <section id="slide9" class="bg-gradient-h">
+        <div class="wrap">
+
+
+
+<h3 id="toc_0"><strong>Install Now</strong></h3>
+
+<p class="text-intro">Run from the root of your Hugo site:</p>
+
+<pre><code>$ git clone https://github.com/RCJacH/hugo-webslides.git themes/hugo-webslides
+</code></pre>
+ </div>
+      </section>
+  
+
+      
+
+      <section id="slide10">
+        <div class="wrap aligncenter">
+
+
+
+<h1 id="toc_0" class="text-landing"> Good Karma</h1>
+
+<p class="text-intro"><a href="http://webslides.tv"><strong>WebSlides</strong></a> &mdash; HTML presentations made easy. <br>
+Hypertext and beauty as narrative elements.</p>
+
+<p><a href="https://twitter.com/webslides">Twitter</a>
+<a href="https://dribbble.com/tags/webslides">Dribble</a>
+<a href="https://github.com/webslides/webslides">Github</a></p>
+
+ </div>
+      </section>
+      
+
+      <section id="slide11" class="bg-black aligncenter">
+        <span class="background" style="background-image:url('https://source.unsplash.com/OkAAx4mI2Hc/')"></span>
+        <span class="background frame"></span>
+        <div class="wrap fadeInUp">
+
+
+
+<h1 id="toc_1">Everyone <svg class="fa-heart-o">
+  <use xlink:href="#fa-heart-o"></use>
+</svg>
+ Stories</h1>
+
+ </div>
+      </section>
+      
+
+      <section id="slide12">
+        <div class="wrap">
+          <div class="content-center">
+
+
+
+<h2 id="toc_2"><strong>Why WebSlides?</strong></h2>
+
+<blockquote>
+  <p>"I feel guilty as a web designer when I have to use PowerPoint and Keynote. So I made <a href="https://twitter.com/search?q=%23webslides&amp;src=typd">#WebSlides</a>."</p>
+  <p><cite> <img class="avatar-40" src="https://raw.githubusercontent.com/webslides/WebSlides/master/static/images/avatar.jpg" alt="Avatar"> <a href="http://twitter.com/jlantunez/">@jlantunez</a>.</cite></p>
+</blockquote>
+
+ 
+          </div></div>
+      </section>
+      
+
+      <section id="slide13">
+        <div class="wrap">
+
+
+
+
+          <div class="grid vertical-align">
+            <div class="column">
+
+<h3 id="toc_3"><strong>WebSlides is really easy</strong></h3>
+
+<p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide.</p>
+
+<p>Code is clean, scalable, and well documented. It uses <strong>intuitive markup</strong> with popular naming conventions. There&rsquo;s no need to overuse classes or nesting. <strong>Based on <a href="https://github.com/jennschiffer/SimpleSlides">SimpleSlides</a>, by <a href="http://jennmoney.biz">Jenn Schiffer</a></strong> :)</p>
+
+</div>
+            <div class="column">
+
+<pre>&lt;article id="webslides"&gt;
+  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
+  &lt;section&gt;
+    &lt;h1&gt;Design for trust&lt;/h1&gt;
+  &lt;/section&gt;
+  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
+  &lt;section class="bg-primary"&gt;
+    &lt;div class="wrap"&gt;
+      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+</pre>
+
+</div>
+          </div> </div>
+      </section>
+      
+
+      <section id="slide14">
+        <div class="wrap">
+
+
+
+<div class='content-left'>
+  <h2>WebSlides was made to inspire people.</h2>
+</div>
+
+
+<div class='content-left'>
+  <p>There are excellent presentation tools out there. WebSlides is <strong>an open source solution</strong> for telling stories. Hypertext and beauty as narrative elements.</p>
+</div>
+
+
+<ul class="flexblock features">
+<li><div>
+  <h2>
+    <span>&rarr;</span> Keyboard navigation
+  </h2>
+  with arrow keys.
+</div>
+</li>
+<li><div><h2><svg class="fa-link">
+  <use xlink:href="#fa-link"></use>
+</svg>
+Go to a specific slide</h2>URL: #slide=number</div></li>
+<li><div><h2><svg class="fa-clock-o">
+  <use xlink:href="#fa-clock-o"></use>
+</svg>
+Slide counter</h2>Current/Total number.</div></li>
+</ul>
+
+ </div>
+      </section>
+      
+
+      <section id="slide15">
+        <div class="wrap">
+
+
+
+<ul class="flexblock features ">
+<li><div>
+  <h2>
+    <span>100<sup>%</sup></span> customizable
+  </h2>
+  Well documented.
+</div>
+</li>
+<li><div>
+  <h2>
+    <span>40<sup>+</sup></span> Beautiful Components
+  </h2>
+  Covers, cards, quotes...
+</div>
+</li>
+<li><div><h2><svg class="fa-list">
+  <use xlink:href="#fa-list"></use>
+</svg>
+Flexible blocks</h2>with auto-fill and equal height.</div></li>
+<li><div><h2><svg class="fa-text-height">
+  <use xlink:href="#fa-text-height"></use>
+</svg>
+Vertical rhythm</h2>Use multiples of 8.</div></li>
+<li><div><h2><svg class="fa-language">
+  <use xlink:href="#fa-language"></use>
+</svg>
+Fade transition</h2>to all slides.</div></li>
+<li><div>
+  <h2>
+    <span>500<sup>+</sup></span>SVG Icons
+  </h2>
+  Font Awesome Kit.
+</div>
+</li>
+</ul>
+
+ </div>
+      </section>
+      
+
+      <section id="slide16">
+        <div class="description">
+
+<!--： .wrap -->
+
+
+          <div class="grid vertical-align">
+            <div class="column">
+
+<h3 id="toc_4">Support</h3>
+
+<p>Making a beautiful HTML presentation has never been so rewarding.</p>
+
+
+
+<ul>
+<li><strong>Demos:</strong> <a href="https://webslides.tv/demos/landings">Landings</a> &middot; <a href="https://webslides.tv/demos/portfolios.html">Portfolios</a></li>
+<li><strong>Docs:</strong> <a href="https://webslides.tv/demos/components.html">Components</a> &middot; <a href="https://webslides.tv/demos/classes.html">Classes</a></li>
+<li><strong>Tags:</strong> <a href="https://dribbble.com/tags/webslides">Dribble</a> &middot; <a href="https://instagram.com/webslides">Instagram</a></li>
+</ul>
+
+</div>
+            <div class="column">
+
+<p><a href="https://github.com/webslides/webslides"><img class="aligncenter" src="https://raw.githubusercontent.com/webslides/WebSlides/master/static/images/setup.png" alt="WebSlides Files"></a></p>
+
+</div>
+            <div class="column">
+
+<h3 id="toc_5">Extensible</h3>
+
+<p>The best way to inspire with your content is to connect on a personal level:</p>
+
+<ul class="description ">
+<li><strong>Animations:</strong> <a href="https://github.com/daneden/animate.css/">Animate.css</a>.</li>
+<li><strong>Images:</strong> <a href="http://unsplash.com">Unsplash</a>.</li>
+<li><strong>Videos:</strong> <a href="https://pixabay.com/en/videos">Pixabay</a>.</li>
+</ul>
+
+</div>
+          </div> </div>
+      </section>
+      
+
+      <section id="slide17" class="bg-apple aligncenter">
+        <span class="background-right-bottom" style="background-image:url('https://webslides.tv/static/images/tim-cook.png')"></span>
+        <div class="wrap">
+
+
+
+<h2 id="toc_6">One more thing&hellip;</h2>
+
+<p class="fadeInUp"><a href="https://webslides.tv/demos/keynote.html">Make your keynote &mdash; <code>.bg-apple</code></a></p>
+ </div>
+      </section> 
+
+      </article>
+    </main>
+
+    
+    <script src="js/webslides.min.js"></script>
+<script>window.ws = new WebSlides({minWheelDelta: 40 ,scrollWait: 450 ,slideOffset: 50 ,});</script>
+<script defer src="js/svg-icons.js"></script>
+
+  </body>
+</html>
