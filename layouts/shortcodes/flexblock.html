@@ -1,6 +1,6 @@
 <div>
-  <h2>
+  <h{{- with .Get 1 -}}{{.}}{{else}}2{{end}}>
     {{ .Get 0 | safeHTML }}
-  </h2>
+  </h{{- with .Get 1 -}}{{.}}{{else}}2{{end}}>
   {{ .Inner | safeHTML }}
 </div>
