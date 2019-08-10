@@ -1,6 +1,6 @@
 +++
 title = "Install Now"
-weight = 2
+weight = 1
 bg = "bg-gradient-h"
 +++
 <!-- : .wrap -->

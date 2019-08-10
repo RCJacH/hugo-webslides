@@ -1,117 +1,136 @@
 +++
-title = "Hugo-webslides"
+title = "Hugo-Webslides"
 +++
-<!--: .wrap .aligncenter -->
+<!--: .wrap .size-70 ..aligncenter -->
 
-# <!--: .text-landing --> Good Karma
 
-<!--: .text-intro -->[**WebSlides**](http://webslides.tv) &mdash; HTML presentations made easy. <br>
-Hypertext and beauty as narrative elements.
+## **Hugo-Webslides**
+<!--: .text-intro -->Use markdown to write contents and render with **WebSlides** to html.
 
-[Twitter](https://twitter.com/webslides)
-[Dribble](https://dribbble.com/tags/webslides)
-[Github](https://github.com/webslides/webslides)
+[{{< svg fa-github >}}Github](https://github.com/RCJacH/hugo-webslides)
 
 ---
-<!--: .wrap .fadeInUp bg=bg-black bg=aligncenter bgimage=frame|https://source.unsplash.com/OkAAx4mI2Hc/ -->
 
-# Everyone {{< svg fa-heart-o >}} Stories
+<!--: .wrap -->
 
----
-<!--: .wrap ..content-center -->
+## **WebSlides Demos**
+Here's what you can do with [WebSlides](https://webslides.tv).
 
-## **Why WebSlides?**
-
-<blockquote>
-  <p>"I feel guilty as a web designer when I have to use PowerPoint and Keynote. So I made <a href="https://twitter.com/search?q=%23webslides&amp;src=typd">#WebSlides</a>."</p>
-  <p><cite> <img class="avatar-40" src="https://raw.githubusercontent.com/webslides/WebSlides/master/static/images/avatar.jpg" alt="Avatar"> <a href="http://twitter.com/jlantunez/">@jlantunez</a>.</cite></p>
-</blockquote>
+<!--: .flexblock gallery -->
+- {{< gallery title="Why WebSlides" href="#slide=10" src="https://webslides.tv/static/images/demos-why.png" >}}Why WebSlides{{< /gallery >}}
+- {{< gallery title="Landings" href="https://webslides.tv/demos/landings" src="https://webslides.tv/static/images/demos-landings.png" >}}Landings{{< /gallery >}}
+- {{< gallery title="Portfolios" href="https://webslides.tv/demos/portfolios" src="https://webslides.tv/static/images/demos-portfolios.png" >}}Portfolios{{< /gallery >}}
+- {{< gallery title="Keynote" href="https://webslides.tv/demos/apple" src="https://webslides.tv/static/images/demos-apple.png" >}}Keynote{{< /gallery >}}
 
 ---
 <!--: .wrap -->
+
+## **More Examples**
+<small>Note. None of these slides are currently not ported to Hugo-Webslides...YET.</small>
+
+<!--: .flexblock gallery -->
+- {{< gallery title="Netflix's Culture" href="https://webslides.tv/demos/netflix-culture" src="https://webslides.tv/static/images/demos-netflix.png" >}}Netflix{{< /gallery >}}
+- {{< gallery title="Longform Articles" href="https://webslides.tv/demos/longforms" src="https://webslides.tv/static/images/demos-longforms.png" >}}Longforms{{< /gallery >}}
+- {{< gallery title="Interviews" href="https://webslides.tv/demos/interviews" src="https://webslides.tv/static/images/demos-interviews.png" >}}Interviews{{< /gallery >}}
+
+---
+<!-- : .wrap .size-40 -->
+
+### **Configuration**
+<!-- : .text-intro -->You can modify WebSlides settings directly from your project config.toml.
+
+~~~toml
+[params.webslides]
+  banner = false
+  slideshow = true
+  vertical = false
+  autoslide = false
+  changeOnClick = false
+  disableLoop = false
+  minWheelDelta = 40
+  disableNavigateOnScroll = false
+  scrollWait = 450
+  slideOffset = 50
+  hideIndex = false
+~~~
+
+
+---
+<!-- : .wrap -->
 
 |||v
 
-### **WebSlides is really easy**
-<!--: .text-intro -->Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide.
+### **All from one markdown file**
 
-Code is clean, scalable, and well documented. It uses **intuitive markup** with popular naming conventions. There's no need to overuse classes or nesting. **Based on [SimpleSlides](https://github.com/jennschiffer/SimpleSlides), by [Jenn Schiffer](http://jennmoney.biz)** :)
-
-|||
-
-<pre>&lt;article id="webslides"&gt;
-  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
-  &lt;section&gt;
-    &lt;h1&gt;Design for trust&lt;/h1&gt;
-  &lt;/section&gt;
-  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
-  &lt;section class="bg-primary"&gt;
-    &lt;div class="wrap"&gt;
-      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/article&gt;
-</pre>
-
----
-<!--: .wrap -->
-
-{{% div class="content-left" %}}
-## WebSlides was made to inspire people.
-{{% /div %}}
-
-{{% div class="content-left" %}}
-There are excellent presentation tools out there. WebSlides is **an open source solution** for telling stories. Hypertext and beauty as narrative elements.
-{{% /div %}}
-
-<!--: .flexblock features -->
-- {{< flexblock "<span>&rarr;</span> Keyboard navigation" >}}with arrow keys.{{< /flexblock >}}
-- <div><h2>{{< svg fa-link >}}Go to a specific slide</h2>URL: #slide=number</div>
-- <div><h2>{{< svg fa-clock-o >}}Slide counter</h2>Current/Total number.</div>
-
----
-<!--: .wrap -->
-
-<!--: .flexblock features  -->
-- {{< flexblock "<span>100<sup>%</sup></span> customizable" >}}Well documented.{{< /flexblock >}}
-- {{< flexblock "<span>40<sup>+</sup></span> Beautiful Components" >}}Covers, cards, quotes...{{< /flexblock >}}
-- <div><h2>{{< svg fa-list >}}Flexible blocks</h2>with auto-fill and equal height.</div>
-- <div><h2>{{< svg fa-text-height >}}Vertical rhythm</h2>Use multiples of 8.</div>
-- <div><h2>{{< svg fa-language >}}Fade transition</h2>to all slides.</div>
-- {{< flexblock "<span>500<sup>+</sup></span>SVG Icons" >}}Font Awesome Kit.{{< /flexblock >}}
-
----
-<!--： .wrap -->
-
-|||v
-
-### Support
-
-Making a beautiful HTML presentation has never been so rewarding.
-
-<!--: .description -->
-- **Demos:** [Landings](https://webslides.tv/demos/landings) &middot; [Portfolios](https://webslides.tv/demos/portfolios.html)
-- **Docs:** [Components](https://webslides.tv/demos/components.html) &middot; [Classes](https://webslides.tv/demos/classes.html)
-- **Tags:** [Dribble](https://dribbble.com/tags/webslides) &middot; [Instagram](https://instagram.com/webslides)
+Use three dashes "<code>-</code>" to create a separate slide page.
 
 |||
 
-[<img class="aligncenter" src="https://raw.githubusercontent.com/webslides/WebSlides/master/static/images/setup.png" alt="WebSlides Files">](https://github.com/webslides/webslides")
+~~~markdown
 
-|||
-
-### Extensible
-
-The best way to inspire with your content is to connect on a personal level:
-
-<!--: .description  -->
-- **Animations:** [Animate.css](https://github.com/daneden/animate.css/).
-- **Images:** [Unsplash](http://unsplash.com).
-- **Videos:** [Pixabay](https://pixabay.com/en/videos).
+Slide1
 
 ---
-<!--: bg=bg-apple bg=aligncenter .wrap bgimage=https://webslides.tv/static/images/tim-cook.png bgpos=right-bottom -->
 
-## One more thing...
+Slide2
 
-<!--: .fadeInUp -->[Make your keynote &mdash; <code>.bg-apple</code>](https://webslides.tv/demos/keynote.html)
+~~~
+
+---
+<!-- : .wrap ..content-right -->
+
+### Or not.
+
+You can combine and arrange files with the weight parameter in front matter.
+
+You can categorize .md files into different folders.
+
+---
+<!-- : .aligncenter -->
+
+## Simple Class Assignment
+
+Assign class to a block by using the following notation without quote.
+
+<code><span><!-</span>- : .class -<span>-></span>Content</code>
+
+---
+<!-- : .wrap -->
+
+### You can assign class to many elements
+
+<!-- : .flexblock -->
+- {{% flexblock "Slides" 6 %}}
+<span><!-</span>- : sectionClass .divClass ..subClass -<span>-></span><br>
+Content
+~~~html
+<section class="sectionClass">
+  <div class="divClass">
+    <div class="subClass">
+    Content
+    </div>
+  </div>
+</section>
+~~~
+{{% /flexblock %}}
+
+- {{% flexblock "Headers and Paragraphs" 6 %}}
+<span># <!-</span>- : .hClass -<span>-></span>Header<br>
+<span><!-</span>- : .pClass -<span>-></span>Paragraph
+~~~html
+<h1 class="hClass">Header</h1>
+<p class="pClass">Paragraph</p>
+~~~
+{{% /flexblock %}}
+
+- {{% flexblock "Lists" 6 %}}
+<span><!-</span>- : .listClass -<span>-></span><br>
+<span>-</span> list1<br>
+<span>-</span> list2
+~~~
+<ul class="listClass">
+  <li>list1</li>
+  <li>list2</li>
+</ul>
+~~~
+{{% /flexblock %}}
