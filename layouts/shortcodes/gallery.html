@@ -1,0 +1,8 @@
+<a{{- with .Get "href" }} href="{{- . | safeHTML -}}"{{- end -}}{{- with .Get "title" }} title="{{- . | safeHTML -}}"{{- end -}}>
+  <figure>
+    <img{{- if (or (.Get "title") (.Get "alt")) }} alt="{{ with .Get "alt"}}{{.}}{{else}}Thumbnail {{.Get "title"}}{{end}}"{{ end }}{{ if .Get "src" }} src="{{- .Get "src" -}}"{{- end -}}>
+    {{ with .Inner -}}<figcaption>
+      <h2>{{ . | safeHTML }}</h2>
+    </figcaption>{{- end }}
+  </figure>
+</a>
