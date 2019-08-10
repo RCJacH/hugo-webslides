@@ -30,7 +30,7 @@ Hypertext and beauty as narrative elements.
 ---
 <!--: .wrap -->
 
-||||
+|||v
 
 ### **WebSlides is really easy**
 <!--: .text-intro -->Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide.
@@ -83,7 +83,7 @@ There are excellent presentation tools out there. WebSlides is **an open source 
 ---
 <!--： .wrap -->
 
-||||
+|||v
 
 ### Support
 

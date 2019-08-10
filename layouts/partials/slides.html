@@ -43,10 +43,18 @@
       <!-- List class -->
       {{- $elem_val := replaceRE "<!--[ ]?: [.](.+) -->[\n]*<([uo]l)>" "<$2 class=\"$1\">" $elem_val }}
       <!-- Grid class -->
-      {{- with index (findRE "<p>[|]{4,}" $elem_val) 0 -}}
-        {{- $.Scratch.Set "gridClass" "vertical-align" -}}
+      {{- with index (findRE "<p>[|]{3,}[vsm]+" $elem_val) 0 -}}
+        {{- if in . "v" -}}
+          {{- $.Scratch.Set "gridClass" "vertical-align" -}}
+        {{- else if in . "sms" -}}
+          {{- $.Scratch.Set "gridClass" "sms" -}}
+        {{- else if in . "ms" -}}
+          {{- $.Scratch.Set "gridClass" "ms" -}}
+        {{- else if in . "sm" -}}
+          {{- $.Scratch.Set "gridClass" "sm" -}}
+        {{- end -}}
       {{- end -}}
-      {{- $elem_val := replaceRE "<p>[|]{4,}" "<p>|||" $elem_val -}}
+      {{- $elem_val := replaceRE "<p>[|]{3,}[vsm]+" "<p>|||" $elem_val -}}
       <!-- hr with two dashes -->
       {{- $elem_val := replaceRE "[\n]*<p>&ndash;</p>[\n]*" "<hr />" $elem_val }}
 
