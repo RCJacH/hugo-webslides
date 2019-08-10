@@ -77,13 +77,24 @@ Slide2
 ~~~
 
 ---
-<!-- : .wrap ..content-right -->
+<!-- : .wrap -->
+
+
+|||
+
+~~~
+content
+├── home
+│   ├── home1.md (weight: 1)
+│   └── home2.md (weight: 2)
+└── _index.md (initial page)
+~~~
+
+|||
 
 ### Or not.
 
-You can combine and arrange files with the weight parameter in front matter.
-
-You can categorize .md files into different folders.
+You can combine and arrange files with the weight parameter in front matter, and categorize .md files into different folders.
 
 ---
 <!-- : .aligncenter -->
