@@ -1,2 +1,4 @@
-*.sublime*
+*.sublime-workspace
+*.sublime-project
+
 public
