@@ -66,7 +66,7 @@ Use three dashes "<code>-</code>" to create a separate slide page.
 
 |||
 
-~~~markdown
+~~~md
 
 Slide1
 
