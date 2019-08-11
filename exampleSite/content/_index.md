@@ -5,7 +5,7 @@ title = "Hugo-Webslides"
 
 
 ## **Hugo-Webslides**
-<!--: .text-intro -->Use markdown to write contents and render with **WebSlides** to html.
+<!--: .text-intro -->Use markdown to write contents and render with [**WebSlides**](https://webslides.tv) to html.
 
 [{{< svg fa-github >}}Github](https://github.com/RCJacH/hugo-webslides)
 
