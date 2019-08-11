@@ -1,11 +1,11 @@
 +++
 title = "Hugo-Webslides"
 +++
-<!--: .wrap .size-70 ..aligncenter -->
+<!--: .wrap .size-70 ..aligncenter bgimage=images/pencil.jpg -->
 
 
 ## **Hugo-Webslides**
-<!--: .text-intro -->Use markdown to write contents and render with [**WebSlides**](https://webslides.tv) to html.
+<!--: .text-intro -->Use markdown to write contents and render with [**WebSlides**](https://webslides.tv) to HTML.
 
 [{{< svg fa-github >}}Github](https://github.com/RCJacH/hugo-webslides)
 
