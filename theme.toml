@@ -5,6 +5,7 @@ description = ""
 homepage = "http://example.com/"
 tags = ["slide", "presentation", "responsive", "landing page"]
 features = ["webslides.js", "pre-made template", "shortcodes"]
+min_version = 0.54
 
 [author]
   name = "RCJacH"
