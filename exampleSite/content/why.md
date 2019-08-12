@@ -56,13 +56,13 @@ Code is clean, scalable, and well documented. It uses **intuitive markup** with 
 ---
 <!--: .wrap -->
 
-{{% div class="content-left" %}}
+{{< div class="content-left" >}}
 ## WebSlides was made to inspire people.
-{{% /div %}}
+{{< /div >}}
 
-{{% div class="content-left" %}}
+{{< div class="content-left" >}}
 There are excellent presentation tools out there. WebSlides is **an open source solution** for telling stories. Hypertext and beauty as narrative elements.
-{{% /div %}}
+{{< /div >}}
 
 <!--: .flexblock features -->
 - {{< flexblock "<span>&rarr;</span> Keyboard navigation" >}}with arrow keys.{{< /flexblock >}}

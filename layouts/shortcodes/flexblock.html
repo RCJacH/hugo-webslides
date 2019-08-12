@@ -2,5 +2,5 @@
   <h{{- with .Get 1 -}}{{.}}{{else}}2{{end}}>
     {{ .Get 0 | safeHTML }}
   </h{{- with .Get 1 -}}{{.}}{{else}}2{{end}}>
-  {{ .Inner | safeHTML }}
+  {{ .Inner | markdownify }}
 </div>

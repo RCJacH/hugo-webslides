@@ -111,7 +111,7 @@ Assign class to a block by using the following notation without quote.
 ### You can assign class to many elements
 
 <!-- : .flexblock -->
-- {{% flexblock "Slides" 6 %}}
+- {{< flexblock "Slides" 6 >}}
 <span><!-</span>- : sectionClass .divClass ..subClass -<span>-></span><br>
 Content
 ~~~html
@@ -123,18 +123,18 @@ Content
   </div>
 </section>
 ~~~
-{{% /flexblock %}}
+{{< /flexblock >}}
 
-- {{% flexblock "Headers and Paragraphs" 6 %}}
+- {{< flexblock "Headers and Paragraphs" 6 >}}
 <span># <!-</span>- : .hClass -<span>-></span>Header<br>
 <span><!-</span>- : .pClass -<span>-></span>Paragraph
 ~~~html
 <h1 class="hClass">Header</h1>
 <p class="pClass">Paragraph</p>
 ~~~
-{{% /flexblock %}}
+{{< /flexblock >}}
 
-- {{% flexblock "Lists" 6 %}}
+- {{< flexblock "Lists" 6 >}}
 <span><!-</span>- : .listClass -<span>-></span><br>
 <span>-</span> list1<br>
 <span>-</span> list2
@@ -144,4 +144,4 @@ Content
   <li>list2</li>
 </ul>
 ~~~
-{{% /flexblock %}}
+{{< /flexblock >}}
