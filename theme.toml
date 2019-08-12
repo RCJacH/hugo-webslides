@@ -5,7 +5,7 @@ description = "Hugo-WebSlides - Writing beautiful slides in markdown with Hugo."
 homepage = "http://example.com/"
 tags = ["slide", "presentation", "responsive", "landing page"]
 features = ["webslides.js", "pre-made template", "shortcodes"]
-min_version = 0.56.3
+min_version = 0.56
 
 [author]
   name = "RCJacH"
