@@ -5,6 +5,7 @@ title = "Hugo-Webslides"
 
 
 ## **Hugo-Webslides**
+
 <!--: .text-intro -->Use markdown to write contents and render with [**WebSlides**](https://webslides.tv) to HTML.
 
 [{{< svg fa-github >}}Github](https://github.com/RCJacH/hugo-webslides)
@@ -37,6 +38,7 @@ Here's what you can do with [WebSlides](https://webslides.tv).
 <!-- : .wrap .size-40 -->
 
 ### **Configuration**
+
 <!-- : .text-intro -->You can modify WebSlides settings directly from your project config.toml.
 
 ~~~toml

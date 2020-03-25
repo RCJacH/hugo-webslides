@@ -24,8 +24,10 @@
       {{- $.Scratch.Delete "gridClass" -}}
       
       <!-- Get slide properties from first line with HTML comment -->
-      {{/*  {{- $first := index (findRE "<p>{[ ]*(.+)[ ]*}</p>" (index (split $elem_val "\n") 0) 1) 0 -}}  */}}
       {{- $first := index (findRE "<!--[ ]*:[ ]+(.+)[ ]+-->" $elem_val 1) 0 -}}
+      {{/*  {{ printf "%#v" $elem_val }} <br><br>  */}}
+      {{/*  Tags {{ (index (split $elem_val "\n") 0) }}  */}}
+      {{/*  {{- $first := index (findRE "<p>{[ ]*(.+)[ ]*}</p>" (index (split $elem_val "\n") 0) 1) 0 -}}  */}}
       {{- with $first -}}
         {{- $.Scratch.Set "sectionClass" (replace (index (findRE " ([a-zA-Z1-9]|-{,1}|_{,1})+[^=] " $first) 0) " " "") -}}
         {{- $.Scratch.Set "contentClass" (replace (delimit (findRE " [.][^. ]+" $first) " ") " ." "") -}}
@@ -46,9 +48,9 @@
       <!-- Block class -->
       {{- $elem_val := replaceRE "<([^>]+)><!--[ ]*:[ ]+[.]([^.]+)[ ]+-->" "<$1 class=\"$2\">" $elem_val -}}
       <!-- List class -->
-      {{- $elem_val := replaceRE "<!--[ ]*:[ ]+([.][^. ]+)[ ]+-->[\n]*<([uo]l)>" "<$2 class=\"$1\">" $elem_val }}
+      {{- $elem_val := replaceRE "<!--[ ]*:[ ]+([.][^.]+)[ ]+-->[\n]*<([uo]l)>" "<$2 class=\"$1\">" $elem_val }}
       <!-- Replace class dot -->
-      {{- $elem_val := replaceRE "class=\"[.]([^. ]+)\"" "class=\"$1\"" $elem_val }}
+      {{- $elem_val := replaceRE "class=\"[.](.+)\"" "class=\"$1\"" $elem_val }}
 
       <!-- Grid class -->
       {{- with index (findRE "<p>[|]{3,}[vsm]+" $elem_val) 0 -}}
