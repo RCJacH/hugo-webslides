@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://github.com/rcjach/hugo-webslides.git"
 languageCode = "en-us"
 title = "A Hugo theme for creating Webslides.js presentations"
 disableKinds = ["sitemap", "RSS"]
