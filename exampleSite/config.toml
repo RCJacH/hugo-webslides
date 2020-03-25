@@ -25,5 +25,8 @@ features = ["webslides.js", "pre-made template", "shortcodes"]
   slideOffset = 50
   hideIndex = false
 
-[blackfriday]
-extensionsmask = ["autoHeaderIds"]
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true
