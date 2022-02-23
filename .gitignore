@@ -1,4 +1,6 @@
 *.sublime-workspace
 *.sublime-project
-
+*workspace
+.vscode
 public
+.hugo_build.lock

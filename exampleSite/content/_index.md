@@ -6,7 +6,8 @@ title = "Hugo-Webslides"
 
 ## **Hugo-Webslides**
 
-<!--: .text-intro -->Use markdown to write contents and render with [**WebSlides**](https://webslides.tv) to HTML.
+Use markdown to write contents and render with [**WebSlides**](https://webslides.tv) to HTML.
+{ .text-intro }
 
 [{{< svg fa-github >}}Github](https://github.com/RCJacH/hugo-webslides)
 
@@ -17,29 +18,31 @@ title = "Hugo-Webslides"
 ## **WebSlides Demos**
 Here's what you can do with [WebSlides](https://webslides.tv).
 
-<!--: .flexblock gallery -->
 - {{< gallery title="Why WebSlides" href="#slide=10" src="https://webslides.tv/static/images/demos-why.png" >}}Why WebSlides{{< /gallery >}}
 - {{< gallery title="Landings" href="https://webslides.tv/demos/landings" src="https://webslides.tv/static/images/demos-landings.png" >}}Landings{{< /gallery >}}
 - {{< gallery title="Portfolios" href="https://webslides.tv/demos/portfolios" src="https://webslides.tv/static/images/demos-portfolios.png" >}}Portfolios{{< /gallery >}}
 - {{< gallery title="Keynote" href="https://webslides.tv/demos/apple" src="https://webslides.tv/static/images/demos-apple.png" >}}Keynote{{< /gallery >}}
+{ .flexblock .gallery }
 
 ---
 <!--: .wrap -->
 
 ## **More Examples**
-<small>Note. None of these slides are currently not ported to Hugo-Webslides...YET.</small>
+<small>Note. None of these slides are currently ported to Hugo-Webslides...YET.</small>
 
-<!--: .flexblock gallery -->
 - {{< gallery title="Netflix's Culture" href="https://webslides.tv/demos/netflix-culture" src="https://webslides.tv/static/images/demos-netflix.png" >}}Netflix{{< /gallery >}}
 - {{< gallery title="Longform Articles" href="https://webslides.tv/demos/longforms" src="https://webslides.tv/static/images/demos-longforms.png" >}}Longforms{{< /gallery >}}
 - {{< gallery title="Interviews" href="https://webslides.tv/demos/interviews" src="https://webslides.tv/static/images/demos-interviews.png" >}}Interviews{{< /gallery >}}
+{ .flexblock .gallery }
+
 
 ---
 <!-- : .wrap .size-40 -->
 
 ### **Configuration**
 
-<!-- : .text-intro -->You can modify WebSlides settings directly from your project config.toml.
+You can modify WebSlides settings directly from your project config.toml.
+{ .text-intro }
 
 ~~~toml
 [params.webslides]
@@ -101,31 +104,32 @@ You can combine and arrange files with the weight parameter in front matter, and
 ---
 <!-- : .aligncenter -->
 
-## Simple Class Assignment
+## Slide Attributes
 
-Assign class to a block by using the following notation without quote.
+Assign attributes to a slide by using the following notation.
 
-<code><span><!-</span>- : .class -<span>-></span>Content</code>
-
+~~~
 ---
-<!-- : .wrap -->
+<!-- : .class .class2 ..sub-class bg=bg-class bgimage=(frame|dark|light)|http://image-url/ bgpos=POSITION -->
+~~~
 
-### You can assign class to many elements
-
-<!-- : .flexblock -->
-- {{< flexblock "Slides" 6 >}}
-<span><!-</span>- : sectionClass .divClass ..subClass -<span>-></span><br>
-Content
 ~~~html
-<section class="sectionClass">
-  <div class="divClass">
-    <div class="subClass">
-    Content
+<section id="section-x" class="bg-class slide current" style="">
+  <span class="background-POSITION" style="background-image:url('http://image-url/')"></span>
+  <span class="background frame"></span>
+  <div class="class class2">
+    <div class="sub-class">
+      CONTENT
     </div>
   </div>
 </section>
 ~~~
-{{< /flexblock >}}
+---
+<!-- : .wrap -->
+
+### Assign class to elements
+
+note: ***depreciated*** with the introduction of [Hugo's native block attribute](https://gohugo.io/news/0.81.0-relnotes#attribute-lists-after-markdown-blocks)
 
 - {{< flexblock "Headers and Paragraphs" 6 >}}
 <span># <!-</span>- : .hClass -<span>-></span>Header<br>
@@ -147,3 +151,4 @@ Content
 </ul>
 ~~~
 {{< /flexblock >}}
+{ .flexblock }

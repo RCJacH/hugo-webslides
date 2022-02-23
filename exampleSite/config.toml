@@ -26,7 +26,9 @@ features = ["webslides.js", "pre-made template", "shortcodes"]
   hideIndex = false
 
 [markup]
-  defaultMarkdownHandler = "blackfriday"
   [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
     [markup.goldmark.renderer]
-    unsafe = true
+      unsafe = true

@@ -3,9 +3,10 @@ weight = 2
 +++
 <!--: .wrap .aligncenter -->
 
-# <!--: .text-landing --> Good Karma
+# Good Karma {.text-landing}
 
-<!--: .text-intro -->[**WebSlides**](http://webslides.tv) &mdash; HTML presentations made easy. <br>
+[**WebSlides**](http://webslides.tv) &mdash; HTML presentations made easy. <br>
+{.text-intro}
 Hypertext and beauty as narrative elements.
 
 [Twitter](https://twitter.com/webslides)
@@ -33,7 +34,8 @@ Hypertext and beauty as narrative elements.
 |||v
 
 ### **WebSlides is really easy**
-<!--: .text-intro -->Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide.
+Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide.
+{.text-intro}
 
 Code is clean, scalable, and well documented. It uses **intuitive markup** with popular naming conventions. There's no need to overuse classes or nesting. **Based on [SimpleSlides](https://github.com/jennschiffer/SimpleSlides), by [Jenn Schiffer](http://jennmoney.biz)** :)
 
@@ -64,21 +66,21 @@ Code is clean, scalable, and well documented. It uses **intuitive markup** with 
 There are excellent presentation tools out there. WebSlides is **an open source solution** for telling stories. Hypertext and beauty as narrative elements.
 {{< /div >}}
 
-<!--: .flexblock features -->
 - {{< flexblock "<span>&rarr;</span> Keyboard navigation" >}}with arrow keys.{{< /flexblock >}}
 - <div><h2>{{< svg fa-link >}}Go to a specific slide</h2>URL: #slide=number</div>
 - <div><h2>{{< svg fa-clock-o >}}Slide counter</h2>Current/Total number.</div>
+{.flexblock .features}
 
 ---
 <!--: .wrap -->
 
-<!--: .flexblock features  -->
 - {{< flexblock "<span>100<sup>%</sup></span> customizable" >}}Well documented.{{< /flexblock >}}
 - {{< flexblock "<span>40<sup>+</sup></span> Beautiful Components" >}}Covers, cards, quotes...{{< /flexblock >}}
 - <div><h2>{{< svg fa-list >}}Flexible blocks</h2>with auto-fill and equal height.</div>
 - <div><h2>{{< svg fa-text-height >}}Vertical rhythm</h2>Use multiples of 8.</div>
 - <div><h2>{{< svg fa-language >}}Fade transition</h2>to all slides.</div>
 - {{< flexblock "<span>500<sup>+</sup></span>SVG Icons" >}}Font Awesome Kit.{{< /flexblock >}}
+{.flexblock .features}
 
 ---
 <!--： .wrap -->
@@ -89,10 +91,10 @@ There are excellent presentation tools out there. WebSlides is **an open source 
 
 Making a beautiful HTML presentation has never been so rewarding.
 
-<!--: .description -->
 - **Demos:** [Landings](https://webslides.tv/demos/landings) &middot; [Portfolios](https://webslides.tv/demos/portfolios.html)
 - **Docs:** [Components](https://webslides.tv/demos/components.html) &middot; [Classes](https://webslides.tv/demos/classes.html)
 - **Tags:** [Dribble](https://dribbble.com/tags/webslides) &middot; [Instagram](https://instagram.com/webslides)
+{.description}
 
 |||
 
@@ -104,14 +106,15 @@ Making a beautiful HTML presentation has never been so rewarding.
 
 The best way to inspire with your content is to connect on a personal level:
 
-<!--: .description  -->
 - **Animations:** [Animate.css](https://github.com/daneden/animate.css/).
 - **Images:** [Unsplash](http://unsplash.com).
 - **Videos:** [Pixabay](https://pixabay.com/en/videos).
+{.description}
 
 ---
 <!--: bg=bg-apple bg=aligncenter .wrap bgimage=https://webslides.tv/static/images/tim-cook.png bgpos=right-bottom -->
 
 ## One more thing...
 
-<!--: .fadeInUp -->[Make your keynote &mdash; <code>.bg-apple</code>](https://webslides.tv/demos/keynote.html)
+[Make your keynote &mdash; <code>.bg-apple</code>](https://webslides.tv/demos/keynote.html)
+{.fadeInUp}
